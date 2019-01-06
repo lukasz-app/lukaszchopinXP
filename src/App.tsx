@@ -17,13 +17,13 @@ const _styles = {
   label: RX.Styles.createTextStyle({
     marginTop: 10,
     textAlign: 'center',
-    fontSize: 16
+    fontSize: 16,
   }),
 
   name: RX.Styles.createTextStyle({
     fontWeight: 'bold',
     fontSize: 36,
-    color: '#42B74F'
+    color: '#42B74F',
   }),
 
   links: RX.Styles.createViewStyle({
@@ -42,12 +42,12 @@ const _styles = {
 };
 
 export class App extends RX.Component {
-  render() {
+  public render() {
     return (
       <RX.View style={ _styles.main }>
         <RX.View>
           <RX.Text style={ _styles.title }>Welcome to <RX.Text style={ _styles.name }>ReactXP</RX.Text></RX.Text>
-          <RX.Text style={ _styles.label }>To get started, edit /src/App.js</RX.Text>
+          <RX.Text style={ _styles.label }>To get started, edit /src/App.tsx</RX.Text>
         </RX.View>
 
         <RX.View style={ _styles.links }>

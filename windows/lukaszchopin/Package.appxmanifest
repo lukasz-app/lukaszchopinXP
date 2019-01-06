@@ -7,11 +7,11 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="b36391f0-e366-44c9-b3e3-8fbbf3caf378"
+    Name="49506a83-cc17-411a-a005-dc87e2821fa8"
     Publisher="CN=lukasz"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="b36391f0-e366-44c9-b3e3-8fbbf3caf378" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="49506a83-cc17-411a-a005-dc87e2821fa8" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>lukaszchopin</DisplayName>
