@@ -1,40 +1,17 @@
 import React from 'react';
-import { Component, View } from 'reactxp';
+import { Component, View, Text } from 'reactxp';
+import { inject, observer } from 'mobx-react';
 import styles from './styles';
+import TodosComponent from '../../../components/todos/todos/Todos';
 
-// interface Props {}
-
-export default class Home extends Component<{}, {}> {
+@inject('appStore')
+@observer
+export default class Home extends Component {
   render() {
-    const {} = this.props;
-
     return (
       <View style={styles.container}>
-        <View>
-          {/* <ScrollView
-                        style={styles.contentContainer}
-                        contentContainerStyle={styles.contentContainerNested}
-                    >
-                        {items}
-                    </ScrollView> */}
-        </View>
-        <View>
-          {/* <Button
-                        label="+"
-                        style={styles.button}
-                        labelStyle={styles.buttonLabel}
-                        onPress={add}
-                        active
-                    />
-                    <Button
-                        label="-"
-                        style={styles.button}
-                        labelStyle={styles.buttonLabel}
-                        onPress={subtract}
-                        active
-                    /> */}
-          <View />
-        </View>
+        <Text style={styles.titleText}>This is Home</Text>
+        <TodosComponent />
       </View>
     );
   }

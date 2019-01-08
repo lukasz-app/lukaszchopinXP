@@ -6,11 +6,11 @@ export default {
     alignSelf: 'stretch',
     alignItems: 'center',
     justifyContent: 'flex-start',
-    paddingTop: 20,
+    padding: 10,
+    backgroundColor: 'yellow',
   }),
   titleText: Styles.createTextStyle({
     color: 'black',
-    fontSize: 20,
-    fontWeight: '700',
+    fontSize: 18,
   }),
 };

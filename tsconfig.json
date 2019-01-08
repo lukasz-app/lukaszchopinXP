@@ -1,13 +1,13 @@
 {
     "compilerOptions": {
         "forceConsistentCasingInFileNames": true,
-        "strictPropertyInitialization": true,
+        "strictPropertyInitialization": false,
         "allowSyntheticDefaultImports": true,
         "experimentalDecorators": true,
         "noUnusedParameters": true,
         "noImplicitReturns": true,
         "moduleResolution": "node",
-        "strictNullChecks": true,
+        "strictNullChecks": false,
         "esModuleInterop": true,
         "noUnusedLocals": true,
         "noImplicitThis": true,
