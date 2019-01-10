@@ -1,4 +1,5 @@
 import { Styles } from 'reactxp';
+import { Metrics } from '../../../global/themes';
 
 export default {
   container: Styles.createViewStyle({
@@ -6,7 +7,7 @@ export default {
     alignSelf: 'stretch',
     alignItems: 'center',
     justifyContent: 'flex-start',
-    paddingTop: 20,
+    paddingTop: Metrics.paddingTop,
   }),
   titleText: Styles.createTextStyle({
     color: 'black',

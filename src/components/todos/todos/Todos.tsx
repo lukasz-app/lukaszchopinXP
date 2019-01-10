@@ -3,7 +3,7 @@ import { Component, View, Text } from 'reactxp';
 import { inject, observer } from 'mobx-react';
 import styles from './styles';
 import TodoStore from '../../../stores/TodoStore';
-import TodoList from '../TodoList/TodoList';
+import TodoList from '../todoList/TodoList';
 import { Button } from '../..';
 
 interface Props {
@@ -18,6 +18,11 @@ export default class TodosComponent extends Component<Props, {}> {
       add();
     };
 
+    onSubtreactPressed = () => {
+      const { subtract } = this.props.todoStore;
+      subtract();
+    };
+
     render() {
       const { unfinishedCount } = this.props.todoStore;
       return (
@@ -28,6 +33,7 @@ export default class TodosComponent extends Component<Props, {}> {
           </Text>
           <View style={styles.buttonsContainer}>
             <Button label="ADD" onPress={this.onAddPressed} />
+            <Button label="subtract" onPress={this.onSubtreactPressed} />
           </View>
           <TodoList todoStore={this.props.todoStore} />
         </View>

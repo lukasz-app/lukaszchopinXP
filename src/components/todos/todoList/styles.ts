@@ -4,10 +4,14 @@ export default {
   container: Styles.createViewStyle({
     flex: 1,
     alignSelf: 'stretch',
-    alignItems: 'center',
     justifyContent: 'flex-start',
     padding: 10,
     backgroundColor: 'yellow',
+    flexDirection: 'column',
+  }),
+  list: Styles.createViewStyle({
+    flexDirection: 'column',
+    backgroundColor: 'pink',
   }),
   titleText: Styles.createTextStyle({
     color: 'black',

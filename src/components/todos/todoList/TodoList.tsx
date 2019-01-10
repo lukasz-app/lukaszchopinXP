@@ -15,19 +15,15 @@ export default class TodoList extends Component<Props, {}> {
     renderItem = (item: TodoItemInfo) => <TodoListItem item={item} />;
 
     render() {
-      const { items } = this.props.todoStore;
-
+      const { todos } = this.props.todoStore;
+      console.log('list container render');
       return (
         <View style={styles.container}>
-          <Text style={styles.titleText}>This is TODOS list</Text>
+          {/* <Text style={styles.titleText}>This is TODOS list</Text> */}
           <VirtualListView
-            itemList={items.slice()}
+            itemList={todos}
             renderItem={this.renderItem}
-                    // logInfo={(text) => {
-                    //   console.log('list : ', text);
-                    // }}
-            animateChanges
-            skipRenderIfItemUnchanged
+            style={styles.list}
           />
         </View>
       );

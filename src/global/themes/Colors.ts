@@ -14,22 +14,14 @@ const baseColors = {
   pink: '#ff00ff',
 };
 const appColors = {
-  dark: {
-    a: '#05443f',
-    b: '#052944',
-    c: '#050a44',
-    d: '#200544',
-    e: '#3f0544',
-    f: '#440529',
-  },
-  light: {
-    a: '#f0f7f5',
-    b: '#f0f6f7',
-    c: '#f0f2f7',
-    d: '#f2f0f7',
-    e: '#f5f0f7',
-    f: '#f7f0f6',
-  },
+  richBlack: '#01131A',
+  nicel: '#6B6E72',
+  seaBlue: '#05668D',
+  queenBlue: '#427AA1',
+  anitFlashWhite: '#EBF2FA',
+  white: '#FBFCFE',
+  maxGreen: '#679436',
+  limerick: '#A5BE00',
 };
 const defaults = {
   NAVY: '#001f3f',

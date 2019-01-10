@@ -32,8 +32,21 @@ export default class TodoStore extends BasicStore {
       });
     };
 
+    @action
+    subtract = () => {
+      console.log('sub ');
+      // // this.count = this.count + 1;
+      // const text = randString();
+      this.items.pop();
+    };
+
     @computed
     get unfinishedCount() {
       return this.items.length;
+    }
+
+    @computed
+    get todos() {
+      return this.items.slice();
     }
 }
