@@ -1,5 +1,6 @@
 {
     "extends": ["tslint:recommended", "tslint-react"],
+    "rulesDirectory": ["./node_modules/reactxp/dist/tslint"],
     "rules": {
         "object-literal-sort-keys": false,
         "jsx-curly-spacing": ["always"],
@@ -9,7 +10,7 @@
         "max-line-length": false,
         "interface-name": [true, "never-prefix"],
         "variable-name": false,
-        "quotemark": [true, "single"],
+        "quotemark": [true, "single", "jsx-double"],
         "indent": [true, "spaces"],
         "no-console": false,
         "member-access": false,

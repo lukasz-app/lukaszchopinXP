@@ -9,6 +9,13 @@ export default {
     justifyContent: 'flex-start',
     paddingTop: Metrics.paddingTop,
   }),
+  contentContiner: Styles.createViewStyle({
+    flex: 1,
+    alignSelf: 'stretch',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingTop: Metrics.paddingTop,
+  }),
   titleText: Styles.createTextStyle({
     color: 'black',
     fontSize: 20,

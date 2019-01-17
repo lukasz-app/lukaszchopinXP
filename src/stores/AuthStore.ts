@@ -20,7 +20,7 @@ export default class AuthStore extends BasicStore {
     runAuthChecks = () => {
       // mock hydrating auth token, or initializing new user
       console.log('run auth checks');
-      setTimeout(this.setAuthReady, 200);
+      setTimeout(this.setAuthReady, 1000);
     };
 
     @action

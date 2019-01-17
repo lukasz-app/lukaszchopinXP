@@ -3,6 +3,7 @@ import AppStore from './AppStore';
 import AuthStore from './AuthStore';
 import NavigationStore from './NavigationStore';
 import TodoStore from './TodoStore';
+import InterfaceStore from './InterfaceStore';
 
 configure({
   enforceActions: true,
@@ -13,6 +14,7 @@ interface Stores {
     authStore: AuthStore;
     navigationStore: NavigationStore;
     todoStore: TodoStore;
+    interfaceStore: InterfaceStore;
 }
 
 class RootStore {
@@ -24,6 +26,7 @@ class RootStore {
         authStore: new AuthStore(this),
         navigationStore: new NavigationStore(this),
         todoStore: new TodoStore(this),
+        interfaceStore: new InterfaceStore(this),
       };
     }
 }

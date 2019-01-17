@@ -14,14 +14,11 @@ const baseColors = {
   pink: '#ff00ff',
 };
 const appColors = {
-  richBlack: '#01131A',
-  nicel: '#6B6E72',
-  seaBlue: '#05668D',
-  queenBlue: '#427AA1',
-  anitFlashWhite: '#EBF2FA',
-  white: '#FBFCFE',
-  maxGreen: '#679436',
-  limerick: '#A5BE00',
+  white: '#ECEFEE',
+  grey: '#9D9CAD',
+  waterloo: '#7C8299',
+  bermudaGrey: '#7C8DA7',
+  steelGrey: '#292234',
 };
 const defaults = {
   NAVY: '#001f3f',

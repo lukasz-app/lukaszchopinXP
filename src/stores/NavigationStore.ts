@@ -5,7 +5,7 @@
 //     NavigationNavigator,
 //     NavigationScreenProp,
 // } from 'react-navigation';
-import { action, observable } from 'mobx';
+import { action, observable, computed } from 'mobx';
 import BasicStore from './BasicStore';
 
 // function getCurrentState(state: NavigationState):string {
@@ -23,11 +23,12 @@ import BasicStore from './BasicStore';
 //     }
 //     return childRoutePrev;
 // }
-
 export default class NavigationStore extends BasicStore {
   // navigator?: NavigationScreenProp<NavigationState>;
 
-    @observable currentRouteName: string = '';
+    @observable bottomRoutes = ['ME', 'WORK', 'CONTACT'];
+
+    @observable currentRouteName: string = this.bottomRoutes[0];
 
     // setNavigator = navigator => {
     //     this.navigator = navigator;
@@ -69,4 +70,9 @@ export default class NavigationStore extends BasicStore {
     setCurrentRouteName = (routeName: string) => {
       this.currentRouteName = routeName;
     };
+
+    @computed
+    get currentBottomRouteIndex() {
+      return this.bottomRoutes.findIndex(route => route === this.currentRouteName);
+    }
 }
