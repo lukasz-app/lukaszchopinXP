@@ -8568,7 +8568,7 @@ react-native-debugger-open@0.3.17:
     minimist "^1.2.0"
     semver "^5.4.1"
 
-react-native-devmenu-trigger@1.1.0:
+react-native-devmenu-trigger@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/react-native-devmenu-trigger/-/react-native-devmenu-trigger-1.1.0.tgz#09552172ea5ba1f8d490761d6fb7d20e6df9ef88"
   integrity sha512-5WsNnQ66Q9vDuBojEDyMkFMS+P/zKcKiKhySQDgbi879NF6wYHzIGGC775obTeF5P+hL4pvyfiY2Dri3/itkpg==

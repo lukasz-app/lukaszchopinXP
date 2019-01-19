@@ -25,17 +25,17 @@
         "postinstall": "rndebugger-open"
     },
     "dependencies": {
+        "mobx": "4.3.1",
         "mobx-persist": "0.4.1",
         "mobx-react": "5.4.2",
-        "mobx": "4.3.1",
-        "react-dom": "16.6.3",
-        "react-native-windows": "0.57.0-rc.0",
-        "react-native": "0.57.8",
         "react": "16.6.3",
-        "reactxp-virtuallistview": "^1.5.0",
-        "reactxp": "1.5.0",
+        "react-dom": "16.6.3",
+        "react-native": "0.57.8",
+        "react-native-devmenu-trigger": "^1.1.0",
         "react-native-iphone-x-helper": "^1.2.0",
-        "react-native-devmenu-trigger": "1.1.0"
+        "react-native-windows": "0.57.0-rc.0",
+        "reactxp": "1.5.0",
+        "reactxp-virtuallistview": "^1.5.0"
     },
     "devDependencies": {
         "@babel/core": "7.2.2",
@@ -63,6 +63,7 @@
         "html-webpack-plugin": "3.2.0",
         "jest": "23.6.0",
         "metro-react-native-babel-preset": "0.51.1",
+        "react-native-debugger-open": "0.3.17",
         "rnpm-plugin-windows": "0.2.8",
         "tslint": "5.12.0",
         "tslint-react": "3.6.0",
@@ -70,7 +71,6 @@
         "webpack": "4.28.2",
         "webpack-cli": "3.1.2",
         "webpack-dev-server": "3.1.14",
-        "webpack-merge": "4.1.5",
-        "react-native-debugger-open": "0.3.17"
+        "webpack-merge": "4.1.5"
     }
 }
