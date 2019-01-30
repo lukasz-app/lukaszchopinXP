@@ -8,9 +8,11 @@ export default class AppStore extends BasicStore {
     initApp = () => {
       const {
         authStore: { runAuthChecks },
+        interfaceStore: { initInterface },
       } = this.rootStore.stores;
       console.log('init App');
       runAuthChecks();
+      initInterface();
     };
 
     @action

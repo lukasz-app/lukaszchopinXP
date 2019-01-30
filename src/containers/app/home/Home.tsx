@@ -13,16 +13,13 @@ interface Props {
 @observer
 export default class Home extends Component<Props, {}> {
   render() {
-    const {
-      navigationStore: { currentRouteName },
-    } = this.props;
+    const { navigationStore } = this.props;
     return (
       <View style={styles.container}>
-        <Text style={styles.titleText}>This is Home</Text>
         <View style={styles.contentContiner}>
           <Text>
             {`  this is content for
-            ${currentRouteName}`}
+            ${navigationStore.currentRouteName}`}
           </Text>
         </View>
         <BottomNav />

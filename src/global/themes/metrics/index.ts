@@ -1,3 +1,4 @@
 import Metrics from './Metrics';
+import MetricsWeb from './MetricsWeb';
 
-export default Metrics;
+export default { ...Metrics, ...MetricsWeb };

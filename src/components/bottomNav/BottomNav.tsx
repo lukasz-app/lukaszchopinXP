@@ -1,5 +1,5 @@
 import React from 'react';
-import { Component, View, Text } from 'reactxp';
+import { Component, View } from 'reactxp';
 import { inject, observer } from 'mobx-react';
 import styles from './styles';
 import BottomNavButton from './BottomNavButton';
@@ -20,8 +20,9 @@ export default class BottomNav extends Component<Props, {}> {
       navigationStore: { setCurrentRouteName, currentBottomRouteIndex, bottomRoutes },
       interfaceStore: { screenWidth },
     } = this.props;
+
     return (
-      <View style={styles.container}>
+      <View style={[styles.container]}>
         <BottomNavUnderline
           index={currentBottomRouteIndex}
           itemCount={bottomRoutes.length}

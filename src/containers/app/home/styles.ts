@@ -1,14 +1,8 @@
 import { Styles } from 'reactxp';
-import { Metrics } from '../../../global/themes';
+import { Metrics, AppStyles } from '../../../global/themes';
 
 export default {
-  container: Styles.createViewStyle({
-    flex: 1,
-    alignSelf: 'stretch',
-    alignItems: 'center',
-    justifyContent: 'flex-start',
-    paddingTop: Metrics.paddingTop,
-  }),
+  container: AppStyles.screenContainer,
   contentContiner: Styles.createViewStyle({
     flex: 1,
     alignSelf: 'stretch',

@@ -1,13 +1,22 @@
 import { Styles } from 'reactxp';
-import { Metrics, Colors } from '../../global/themes';
+import { Colors } from '../../global/themes';
+import platformStyles from './platformStyles';
+
+const {
+  appColors: { waterloo },
+  colorWithOpacity,
+} = Colors;
 
 export default {
-  container: Styles.createViewStyle({
-    height: 60,
-    alignSelf: 'stretch',
-    backgroundColor: Colors.appColors.waterloo,
-    flexDirection: 'row',
-  }),
+  container: [
+    Styles.createViewStyle({
+      height: 60,
+      // alignSelf: 'stretch',
+      backgroundColor: colorWithOpacity(waterloo, 0.9),
+      flexDirection: 'row',
+    }),
+    platformStyles.container,
+  ],
   buttonContainer: Styles.createViewStyle({
     flex: 1,
     justifyContent: 'center',

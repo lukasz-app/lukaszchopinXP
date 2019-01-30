@@ -1,13 +1,15 @@
 import { Styles } from 'reactxp';
+import { AppStyles, Colors } from '../../../global/themes';
 
 export default {
-  container: Styles.createViewStyle({
-    flex: 1,
-    alignSelf: 'stretch',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: 'red',
-  }),
+  container: [
+    AppStyles.screenContainer,
+    Styles.createViewStyle({
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: Colors.appColors.steelGrey,
+    }),
+  ],
   titleText: Styles.createTextStyle({
     color: 'white',
     fontSize: 20,

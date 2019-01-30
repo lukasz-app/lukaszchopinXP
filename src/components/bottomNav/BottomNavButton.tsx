@@ -1,17 +1,17 @@
 import React from 'react';
 import { Component, GestureView, Text } from 'reactxp';
 import styles from './styles';
+import { BottomRoute } from '../../stores/NavigationStore';
 
 interface Props {
     title: string;
-    navigate: (route: string) => void;
+    navigate: (route: BottomRoute | string) => void;
 }
 
 export default class NavButton extends Component<Props, {}> {
     onButtonTap = () => {
       const { title, navigate } = this.props;
-      console.log(title);
-      navigate(title);
+      navigate(title.toUpperCase());
     };
 
     render() {

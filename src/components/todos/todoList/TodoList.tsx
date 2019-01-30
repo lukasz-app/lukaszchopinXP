@@ -1,5 +1,5 @@
 import React from 'react';
-import { Component, View, Text } from 'reactxp';
+import { Component, View } from 'reactxp';
 import { observer } from 'mobx-react';
 import { VirtualListView } from 'reactxp-virtuallistview';
 import styles from './styles';

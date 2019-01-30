@@ -1,3 +1,4 @@
+import Color from 'color';
 // DISSCUSS:
 // Splitting colors into separate objects.
 // base for debugging really, appColors for custom projects colors, and defaults
@@ -39,6 +40,18 @@ const defaults = {
   SILVER: '#DDDDDD',
   WHITE: '#FFFFFF',
 };
-const colors = { baseColors, appColors, defaults };
+
+const colors = {
+  baseColors,
+  appColors,
+  defaults,
+  colorWithOpacity: (color: string, opacity: number) => {
+    const newColor = Color(color)
+      .alpha(opacity)
+      .rgb()
+      .string();
+    return newColor;
+  },
+};
 
 export default colors;

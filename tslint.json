@@ -14,6 +14,7 @@
         "indent": [true, "spaces"],
         "no-console": false,
         "member-access": false,
-        "jsx-boolean-value": false
+        "jsx-boolean-value": false,
+        "arrow-parens": false
     }
 }
